@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Context vs. Recoil",
+  "name": "React Context vs. Recoil Rerenders",
   "icons": [
     {
       "src": "favicon.ico",
