@@ -21,6 +21,7 @@ export default function EditableCell({ x, y }) {
       }}
       onMouseEnter={onHover}
       onTouchStart={onHover}
+      onTouchMove={onHover}
     >
       {value}
     </div>
