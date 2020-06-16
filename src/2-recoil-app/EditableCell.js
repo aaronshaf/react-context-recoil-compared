@@ -7,7 +7,7 @@ export default function EditableCell({ x, y }) {
   const [value, setValue] = useRecoilState(cellAtom(x, y));
   const backgroundColor = `#${color(x, y)}`;
 
-  const onHover = () => setValue(Math.floor(Math.random() * 100));
+  const onHover = () => setValue(value + 1);
 
   return (
     <div

@@ -10,7 +10,7 @@ import memoize from 'fast-memoize';
 export const cellAtom = memoize((x, y) =>
   atom({
     key: `cell-${x}-${y}`, // unique ID (with respect to other atoms/selectors)
-    default: Math.floor(Math.random() * 100), // default value (aka initial value)
+    default: 0, // default value (aka initial value)
   })
 );
 

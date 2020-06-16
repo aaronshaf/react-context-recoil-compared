@@ -5,7 +5,7 @@ import { SpreadsheetContext } from './context';
 function App() {
   const size = 6;
   const data = [...Array(size).keys()].map((x) =>
-    [...Array(size).keys()].map((x) => Math.floor(Math.random() * 100))
+    [...Array(size).keys()].map((x) => 0)
   );
   const value = useState(data);
 

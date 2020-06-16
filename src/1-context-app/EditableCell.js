@@ -8,7 +8,7 @@ export default function EditableCell({ x, y, atom }) {
 
   const onHover = () => {
     const clonedData = JSON.parse(JSON.stringify(value));
-    clonedData[x][y] = Math.floor(Math.random() * 100);
+    clonedData[x][y] = clonedData[x][y] + 1;
     setValue(clonedData);
   };
 
