@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ContextApp from './1-context-app/App';
 import RecoilApp from './2-recoil-app/App';
-//
 
 ReactDOM.render(
   <React.StrictMode>
