@@ -6,6 +6,11 @@ import RecoilApp from './2-recoil-app/App';
 ReactDOM.render(
   <React.StrictMode>
     <div>
+      <div style={{ float: 'right' }}>
+        <a href="https://github.com/aaronshaf/react-context-recoil-compared">
+          GitHub
+        </a>
+      </div>
       <h1>React Context vs. Recoil Rerenders</h1>
       <div>
         <em>Color updates represent rerenders</em>
