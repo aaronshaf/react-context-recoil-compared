@@ -7,6 +7,8 @@ export default function EditableCell({ x, y }) {
   const [value, setValue] = useRecoilState(cellAtom(x, y));
   const backgroundColor = `#${color(x, y)}`;
 
+  const onHover = () => setValue(Math.floor(Math.random() * 100));
+
   return (
     <div
       style={{
@@ -17,7 +19,8 @@ export default function EditableCell({ x, y }) {
         margin: 0,
         textAlign: 'center',
       }}
-      onMouseEnter={() => setValue(Math.floor(Math.random() * 100))}
+      onMouseEnter={onHover}
+      onTouchStart={onHover}
     >
       {value}
     </div>

@@ -6,6 +6,12 @@ export default function EditableCell({ x, y, atom }) {
   const [value, setValue] = useContext(SpreadsheetContext);
   const backgroundColor = `#${color(x, y)}`;
 
+  const onHover = () => {
+    const clonedData = JSON.parse(JSON.stringify(value));
+    clonedData[x][y] = Math.floor(Math.random() * 100);
+    setValue(clonedData);
+  };
+
   return (
     <div
       style={{
@@ -16,11 +22,8 @@ export default function EditableCell({ x, y, atom }) {
         margin: 0,
         textAlign: 'center',
       }}
-      onMouseEnter={() => {
-        const clonedData = JSON.parse(JSON.stringify(value));
-        clonedData[x][y] = Math.floor(Math.random() * 100);
-        setValue(clonedData);
-      }}
+      onMouseEnter={onHover}
+      onTouchStart={onHover}
     >
       {value[x][y]}
     </div>

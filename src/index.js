@@ -12,9 +12,7 @@ ReactDOM.render(
         </a>
       </div>
       <h1>React Context vs. Recoil Rerenders</h1>
-      <div>
-        <em>Color updates represent rerenders</em>
-      </div>
+      <div>Color updates represent rerenders. Hover over cells.</div>
 
       <h2>React Context</h2>
       <ContextApp />
