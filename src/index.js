@@ -16,7 +16,7 @@ ReactDOM.render(
       </h1>
       <div>
         Color updates represent rerenders. Touch or hover over cells. Layout not
-        optimize for mobile.
+        optimized for mobile.
       </div>
 
       <h2>React Context</h2>
