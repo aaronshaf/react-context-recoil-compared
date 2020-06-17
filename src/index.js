@@ -11,8 +11,13 @@ ReactDOM.render(
           GitHub
         </a>
       </div>
-      <h1>React Context vs. Recoil Rerenders</h1>
-      <div>Color updates represent rerenders. Touch or hover over cells.</div>
+      <h1>
+        React Context vs. <a href="https://recoiljs.org/">Recoil</a> Rerenders
+      </h1>
+      <div>
+        Color updates represent rerenders. Touch or hover over cells. Layout not
+        optimize for mobile.
+      </div>
 
       <h2>React Context</h2>
       <ContextApp />
